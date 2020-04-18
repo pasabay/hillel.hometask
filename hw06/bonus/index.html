@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var text = prompt('Введите текст', '');
+        var letter = prompt('Введите букву которую хотите удалить', '');
+
+
+        function newText() {
+            var re = new RegExp(letter, 'g')
+            var someNew = text.replace(re, " ");
+            return someNew;
+        }
+        console.log(newText());
+    </script>
+</body>
+
+</html>
